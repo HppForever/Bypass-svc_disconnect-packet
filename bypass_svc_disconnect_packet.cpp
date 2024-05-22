@@ -2,7 +2,7 @@ void SVC_Disconnect()
 {
 	MSG_SaveReadCount();
 
-	if (cvar.console.other.block_svc_disconnect_message && !g_Globals.m_bUnloadLibrary)
+	if (cvar.console.other.block_svc_disconnect_packet && !g_Globals.m_bUnloadLibrary)
 	{
 		MSG_ReadString();
 		return;
